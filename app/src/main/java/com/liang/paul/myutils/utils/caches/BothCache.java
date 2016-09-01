@@ -8,7 +8,7 @@ import com.liang.paul.myutils.interfaces.ImageCache;
  * Created by paulliang on 8/31/16.
  */
 public class BothCache implements ImageCache {
-    MemoryCache memoryCache = new MemoryCache();
+    MemoryCache memoryCache = new MemoryCache(-1);
     DiskCache diskCache = new DiskCache();
 
     @Override

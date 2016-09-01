@@ -12,9 +12,16 @@ public class MemoryCache implements ImageCache {
     private LruCache<String, Bitmap> memoryCache;
 
 
-    public MemoryCache() {
+    public MemoryCache(int percent) {
+        int cacheSize;
         final int maxMemory = (int) (Runtime.getRuntime().maxMemory() / 1024);
-        int cacheSize = maxMemory / 20;
+        if (percent <= 0) {
+             cacheSize= maxMemory / 20;
+        }else if (percent >= 100){
+            cacheSize = maxMemory / 20;
+        }else {
+            cacheSize = maxMemory / 100 * percent;
+        }
         memoryCache = new LruCache<String, Bitmap>(cacheSize){
             @Override
             protected int sizeOf(String key, Bitmap value) {

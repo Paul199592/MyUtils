@@ -18,7 +18,7 @@ import com.liang.paul.myutils.utils.caches.MemoryCache;
  */
 public class CacheImageLoader {
     Context context;
-    ImageCache cache = new MemoryCache();
+    ImageCache cache = new MemoryCache(-1);
     String url;
     Bitmap bitmap = null;
     Bitmap loadingBitmap;
