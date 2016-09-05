@@ -1,6 +1,8 @@
 # MyUtils 1.01
 MyUtils is a utils class group for some android developer daily use fuction
 
+## 中文使用引导 [点击这里](https://github.com/Paul199592/MyUtils/blob/master/README_CHN.md).
+
 #### About PaulActivity & PaulFragment
 When you extend your activity from this activity you can just change your code:
 ```java

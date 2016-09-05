@@ -4,7 +4,7 @@
 
 
 #### 关于 PaulActivity & PaulFragment这两个类
-当你将你的Fragment或者Activity拓展至这两个类，你可很简单将以下代码:
+当你将你的Fragment或者Activity 拓展至这两个类，你可很简单将以下代码:
 ```java
 ImageView img = (ImageView) findViewById(R.id.image);
 ```
